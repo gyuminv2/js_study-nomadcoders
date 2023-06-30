@@ -92,3 +92,29 @@ parseInt(), prompt()
 isNaN(), if문
 
 ### #2.14: conditionals III
+
+---------------
+### #3.0: the document object
+document는 브라우저에 이미 존재하는 object(html을 가리키는 객체). javascript는 이미 html과 연결되어있음(document로)
+
+### #3.1: html in javascript
+```javascript
+document.getElementById("title")
+```
+html을 jacascript에서 읽어올 수 있어야 함. (html: "환영합니다" -> js: "xxx님 환영합니다")
+
+### #3.2: searching for elements
+querySelector()는 element를 css방식으로 검색함.
+
+### #3.3: event
+javascript object의 on~함수들은 event함수임.
+```javascript
+const title = document.querySelector("div.hello h1");
+function handleTitleClick() {
+    console.log("title was clicked!");
+}
+title.addEventListener("click", handleTitleClick);
+```
+
+### #3.3: event II
+h1 html element mdn에서 많은 정보를 알 수 있음. style을 변경하는건 css가 옳음.
