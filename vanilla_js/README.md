@@ -116,5 +116,95 @@ function handleTitleClick() {
 title.addEventListener("click", handleTitleClick);
 ```
 
-### #3.3: event II
+### #3.4: event II
 h1 html element mdn에서 많은 정보를 알 수 있음. style을 변경하는건 css가 옳음.
+
+### #3.5: more events
+```javascript
+const h1 = document.querySelector("div.hello h1");
+
+function handleTitleClick() {
+    console.log("h1 was clicked!");
+}
+function handleTitleMouseEnter() {
+    console.log("Mouse is here!");
+}
+function handleTitleMouseLeave() {
+    console.log("Mouse is gone!");
+}
+function handleWindowResize() {
+    document.body.style.backgroundColor = "tomato";
+}
+function handleWindowCopy() {
+    alert("copier!");
+}
+
+h1.onclick = handleTitleClick;
+h1.onmouseenter = handleTitleMouseEnter;
+h1.onmouseleave = handleTitleMouseLeave;
+
+window.addEventListener("resize", handleWindowResize);
+window.addEventListener("copy", handleWindowCopy);
+```
+
+### #3.6: css in javascript
+```javascript
+const h1 = document.querySelector("div.hello h1");
+
+function handleTitleClick() {
+    const currentColor = h1.style.color;
+    let newColor;
+    if (currentColor === "blue") {
+        newColor = "tomato";
+    } else {
+        newColor = "blue";
+    }
+    h1.style.color = newColor;
+}
+
+h1.addEventListener("click", handleTitleClick);
+```
+javascript에서도 style수정이 가능하다(비추).
+
+### #3.7: css in javascript II
+```javascript
+const h1 = document.querySelector("div.hello h1");
+
+function handleTitleClick() {
+    const clickedClass = "clicked";
+    if (h1.className === clickedClass) {
+        h1.className = "";
+    } else {
+        h1.className = clickedClass;
+    }
+}
+
+h1.addEventListener("click", handleTitleClick);
+```
+```css
+body {
+    background-color: beige;
+}
+
+h1 {
+    color:cornflowerblue;
+    transition:color .5s ease-in-out ;
+}
+
+.clicked {
+    color: tomato;
+}
+```
+style에 최적화된 도구는 css, animation에 최적화된 도구는 js. javascript로 모든 class name을 변경하지 않는게 중요
+
+### #3.8: css in javascript III
+```javascript
+const h1 = document.querySelector("div.hello h1");
+
+function handleTitleClick() {
+    h1.classList.toggle("clicked");
+}
+
+h1.addEventListener("click", handleTitleClick);
+```
+className보다 classList을 사용 권장. className은 과거를 고려 안하기 때문. toggle은 class name이 존재 여부 판단해 제거, 추가하는 기능.
