@@ -225,5 +225,11 @@ css에 hidden클래스를 만들고 form을 hidden함 -> user가 입력한 value
 ### #4.5: saving username
 localStorage: 기본 API, localStorage.setItem("key", value);, localStorage.getItem("key");, localStorage.removeItem("key"); 등 사용 가능.
 
-### #4.2: events
-### #4.2: events
+### #4.6: loading username
+조건문으로 데이터를 계속 저장하고, 새로고침을 해도 유지되게 함.
+
+### #4.7: super recap
+...
+
+### #5.0: intervals
+interval(f, ms): 어떤 코드를 일정 시간을 간격으로 반복 실행.
