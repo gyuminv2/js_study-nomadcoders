@@ -237,5 +237,7 @@ interval(f, ms): 어떤 코드를 일정 시간을 간격으로 반복 실행.
 ### #5.1: timeouts and dates
 Date 객체를 활용해 1초 간격으로 시계를 표시.
 
-### #5.2: padstart
+### #5.2: padStart
+padStart()를 사용해 "1" -> "01" 으로 수정. padEnd()는 "1" -> "10"
+
 ### #5.3: recap
