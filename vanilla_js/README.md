@@ -256,7 +256,11 @@ background.js를 만들어 js에서 HTML element를 만들어 -> html로 이미�
 todo-list를 만들기 위한 세팅.
 
 ### #7.1: Adding To Dos
-1. const li = document.createElement("li"): li를 입력했을 때 html에서 li태그 생성
+1. const li = document.createElement("li"): li를 입력했을 때 html에서 li태그 생성.
 2. li.appendChild(span): li 태그 안에 자식을 span 태그로 함.
-3. 만든 todo-list는 아직 삭제를 못하고, 새로고침 시 초기화 됨
+3. 만든 todo-list는 아직 삭제를 못하고, 새로고침 시 초기화 됨.
 
+### #7.2: Deleting To Dos
+1. button태그를 만듬.
+2. createElement로 js -> html 객체 생성
+3. button.addEventListener("click", deleteToDo);
