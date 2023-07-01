@@ -233,3 +233,9 @@ localStorage: 기본 API, localStorage.setItem("key", value);, localStorage.getI
 
 ### #5.0: intervals
 interval(f, ms): 어떤 코드를 일정 시간을 간격으로 반복 실행.
+
+### #5.1: timeouts and dates
+Date 객체를 활용해 1초 간격으로 시계를 표시.
+
+### #5.2: padstart
+### #5.3: recap
