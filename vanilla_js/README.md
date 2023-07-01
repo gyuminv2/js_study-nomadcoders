@@ -263,4 +263,9 @@ todo-list를 만들기 위한 세팅.
 ### #7.2: Deleting To Dos
 1. button태그를 만듬.
 2. createElement로 js -> html 객체 생성
-3. button.addEventListener("click", deleteToDo);
+3. button.addEventListener("click", deleteToDo): 버튼 클릭 시 감지 후 삭제
+4. 삭제 할때 어떤 리스트가 여러개 있으면 무엇을 삭제할지 모름
+5. const li = event.target.parentElement: 이벤트가 발생했을 때 -> 그 객체의 -> 부모 태그를 지정
+6. li.remove(): 삭제
+
+### #7.3: Saving To Dos
