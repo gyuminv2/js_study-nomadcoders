@@ -208,3 +208,5 @@ function handleTitleClick() {
 h1.addEventListener("click", handleTitleClick);
 ```
 className보다 classList을 사용 권장. className은 과거를 고려 안하기 때문. toggle은 class name이 존재 여부 판단해 제거, 추가하는 기능.
+
+s
