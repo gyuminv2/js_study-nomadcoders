@@ -223,5 +223,7 @@ addEventListener()안에 있는 함수는 직접 실행 x -> 브라우저가 실
 css에 hidden클래스를 만들고 form을 hidden함 -> user가 입력한 value를 Hello 와 결합하여 출력함.
 
 ### #4.5: saving username
+localStorage: 기본 API, localStorage.setItem("key", value);, localStorage.getItem("key");, localStorage.removeItem("key"); 등 사용 가능.
+
 ### #4.2: events
 ### #4.2: events
