@@ -248,3 +248,9 @@ quote를 담을 수 있는 공간을 만들어서 실제로 담아봄.
 
 ### #6.1: Background
 background.js를 만들어 js에서 HTML element를 만들어 -> html로 이미지 삽입.
+
+### #6.2: Recap
+...
+
+### #7.0: Setup
+todo-list를 만들기 위한 세팅.
