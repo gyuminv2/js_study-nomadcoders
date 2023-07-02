@@ -289,3 +289,7 @@ forEach 함수로 JSON.parse()를 이용한 파싱된 배열의 요소에 하나
 
 ```javascript
 parsedToDos.forEach((item)=>console.log("this is turn of"), item);
+```
+
+### #7.5: Loading To Dos part Two
+새로고침 하고 todo를 추가하면 기존의 저장된 toDOs가 local Storage에서 날라감. 이를 막고자 toDos를 pasedToDos에 할당한다.
