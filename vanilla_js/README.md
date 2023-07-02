@@ -293,3 +293,9 @@ parsedToDos.forEach((item)=>console.log("this is turn of"), item);
 
 ### #7.5: Loading To Dos part Two
 새로고침 하고 todo를 추가하면 기존의 저장된 toDOs가 local Storage에서 날라감. 이를 막고자 toDos를 pasedToDos에 할당한다.
+
+### #7.6: Deleting To Dos part One
+삭제 할 때 어떤 것을 삭제할지 모른다. ex) a가 2개 있으면 어떤 a를 삭제 할 지 모름. -> text와 id를 분리한 객체를 TOdo에 담음! -> 앞으로 해야 할 일은 버튼을 누른 id와 기존 id의 parse를 비교해 맞는게 있으면 삭제할듯?
+
+### #7.7: Deleting To Dos part Two
+지우고싶은 item을 제외하고 새로운 array를 만듬. -> .filter()를 사용. filter()는 true를 return하므로 false를 return하면 그 item만 뺀 array를 생성 할 수 있음 ex) 3을 빼고 새로운 array를 만들고 있으면 3이 아니면 true를 return하게끔 함.
