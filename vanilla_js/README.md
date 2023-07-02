@@ -282,3 +282,10 @@ todo-list를 만들기 위한 세팅.
 6. li.remove(): 삭제
 
 ### #7.3: Saving To Dos
+...
+
+### #7.4: Loading To Dos part One
+forEach 함수로 JSON.parse()를 이용한 파싱된 배열의 요소에 하나 하나 접근 가능. 함수를 단축 시킬 수 있음:화살표 함수
+
+```javascript
+parsedToDos.forEach((item)=>console.log("this is turn of"), item);
