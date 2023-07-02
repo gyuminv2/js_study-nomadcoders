@@ -210,8 +210,21 @@ h1.addEventListener("click", handleTitleClick);
 className보다 classList을 사용 권장. className은 과거를 고려 안하기 때문. toggle은 class name이 존재 여부 판단해 제거, 추가하는 기능.
 
 ### #4.0: input values
+```javascript
+const loginInput = document.querySelector("#login-form input");
+const loginButton = document.querySelector("#login-form button");
+
+function onLoginBtnClick() {
+    console.log(loginInput.value);
+    console.log("click!!!");
+}
+
+loginButton.addEventListener("click", onLoginBtnClick);
+```
+사용자가 입력한 value를 찾음
 
 ### #4.1: form submission
+아무것도 입력 안했을때의 작업 필요. input안에 있는 button을 누르거나 type이 submit인 input을 클릭하면 form이 submit됨 -> 버튼 클릭의 의미가 없음 -> 나의 역할은 브라우저가 새로고침하지 않고 user 정보를 저장하도록 하고 싶음
 
 ### #4.2: events
 addEventListener()함수를 사용하면 두번째 인자에 함수를 넣어주는데 그 함수의 event는 항상 preventDefault함수를 가지고 있음. 중요한것은 form을 submit하면 브라우저는 기본적으로 페이지를 새로고침 하도록 함 -> 이것을 막기 위해선 preventDefault()함수를 추가.
