@@ -299,3 +299,9 @@ parsedToDos.forEach((item)=>console.log("this is turn of"), item);
 
 ### #7.7: Deleting To Dos part Two
 지우고싶은 item을 제외하고 새로운 array를 만듬. -> .filter()를 사용. filter()는 true를 return하므로 false를 return하면 그 item만 뺀 array를 생성 할 수 있음 ex) 3을 빼고 새로운 array를 만들고 있으면 3이 아니면 true를 return하게끔 함.
+
+### #7.8: Deleting To Dos part Three
+#7.7에서 배운 내용 적용. toDo.id는 number, li.id는 string 이기 때문에 type을 맞춰줘야함 -> parseInt(li.id)사용
+
+### #8.0 Geolocation
+navigator함수 사용. user의 위치를 알 수 있음.
