@@ -94,3 +94,45 @@ function hi(name:string|number) {
     }
 }
 ```
+
+### #3.0: Call Signatures
+Call Signatures: 함수에 대한 타입을 정의하는 방법 중 하나
+```typescript
+function add(a:number, b:number) {
+    return a + b
+}
+const add = (a:number, b:number) => a+b
+
+type Add = (a:number, b:number) => number; // call signatures
+const add:Add = (a, b) => a+b (O)
+const add:Add = (a, b) => {a+b} (X)
+```
+
+### #3.1: Overloading
+...
+
+### #3.2: Polymorphism
+concreate type: number, boolean, string, void 같은 타입
+generic을 사용하는 이유: call signature을 작성할 때, 들어오는 타입을 모를 때 사용
+```typescript
+type SuperPrint = {
+    (arr: number[]):void
+    (arr: boolean[]):void
+    (arr: string[]): void
+}
+const superPrint: SuperPrint = (arr) => {
+    arr.forEach(i => console.log(i))
+}
+
+superPrint([1, 2, 3, 4])
+superPrint([true, false, true])
+superPrint(["a", "b", "c"])
+// ---- generic 사용
+type SuperPrint = {
+    <T>(arr: T[]): T
+}
+const superPrint: SuperPrint = (arr) => arr[0]
+const a = superPrint([1, 2, 3, 4])
+const b = superPrint([true, false, true])
+const b = superPrint(["a", "b", "c"])
+```
