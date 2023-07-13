@@ -136,3 +136,132 @@ const a = superPrint([1, 2, 3, 4])
 const b = superPrint([true, false, true])
 const b = superPrint(["a", "b", "c"])
 ```
+
+### #3.3: Generics Recap
+any를 쓰지말고 Generic을 쓰자
+
+### #3.4: Conclusions
+Generic은 중요하다
+```typescript
+function superPrint<T>(a: T[]) {
+    return a[0]
+}
+
+type Player<E> = {
+    name:string
+    extraInfo:E
+}
+type GyumPlayer = Player<{favFood:string}>
+const gyum: GyumPlayer = {
+    name:"gyum",
+    extraInfo: {
+        favFood:"goguma"
+    }
+}
+```
+
+### #4.0: Classes
+private은 javascript에 존재하지 않음
+추상클래스와 추상 메소드와 상속(extends)
+```typescript
+abstract class User {
+    constructor(
+            private firstName:string,
+            private lastName:string,
+            public nickname:string
+    ) {}
+    getFullName() {
+        return `${this.firstName} ${this.lastName}`
+    }
+}
+class Player extends User {}
+const gyum = new Player("gyu", "min", "규민");
+gyum.getFullName()
+```
+
+### #4.1: Recap
+클래스를 타입처럼 쓸 수 있음
+
+### #4.2: Interfaces I
+type과 interface
+```typescript
+type Team = "red" | "blue" | "yellow"
+type Health = 1 | 5 | 10
+
+type Player = {
+    nickname:string,
+    team:Team,
+    health:Health
+}
+// 같은 Player
+interface Player {
+    nickname:string,
+    team:Team,
+    health:Health
+}
+const gyum: Player = {
+    nickname:"gyum",
+    team: "blue",
+    health: 10
+}
+```
+
+### #4.3: Interfaces II
+abstract -> 코드가 js에 남음
+interface, implements -> 코드가 js에 남지 않음
+
+### #4.4: Recap
+...
+
+### #4.5: Polymorphism
+```typescript
+interface SStorage<T> {
+    [key:string]:T
+}
+
+class LocalStorage<T> {
+    private storage: SStorage<T> = {}
+    set(key:string, value:T) {
+        thos.storage[key] = value;
+    }
+    remove(key:string) {
+        delete this.storage[key]
+    }
+    get(key:string):T {
+        return this.storage[key]
+    }
+    clear() {
+        this.storage = {}
+    }
+}
+const stringsStorage = new LocalStorage<string>()
+stringsStorage.get("ket")
+stringsStorage.set("hello", "how are you")
+const booleansStorage = new localStorage<boolean>()
+booleansStorage.get("xxx")
+booleansStorage.set("hello", true)
+```
+
+### #5.0: Introduction
+블록체인의 PoC를 타입스크립트로 만듬
+
+### #5.1: Targets
+1. npm init -y, "main"항목 삭제
+2. npm i -D typescript
+3. touch tsconfig.json
+
+tsconfig.json파일의 include에 자바스크립트로 컴파일하고 싶은 모든 디렉토리를 넣어줌.
+compilerOptions의 outDir는 자바스크립트 파일이 생성될 디렉토리를 지정함.
+package.json파일의 script에 "build":"tsc"를 넣어줌.
+4. npm run build
+
+compilerOptions의 target은 어떤 es버전을 사용해 컴파일할건지 지정함.
+Create-React-App 이나 NextJS, NestJS같은 프래임워크는 target에 대해 고민을 하지 않아도 됨
+
+### #5.2: Lib Configuration
+### #5.3: Declaration Files
+### #5.4: JSDoc
+### #5.5: Blocks
+### #5.6: DefinitelyTyped
+### #5.7: Chain
+### #5.8: Conclusions
