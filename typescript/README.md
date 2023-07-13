@@ -259,9 +259,32 @@ compilerOptions의 target은 어떤 es버전을 사용해 컴파일할건지 지
 Create-React-App 이나 NextJS, NestJS같은 프래임워크는 target에 대해 고민을 하지 않아도 됨
 
 ### #5.2: Lib Configuration
+lib은 합쳐진 라이브러리 정의 파일을 특정하는 역할.(어떤 API를 쓸건지)
+
 ### #5.3: Declaration Files
+type definitions: 타입스크립트는 기본적인 타입 정의들을 가지고 있음(Math).
+정의 파일은 자바스크립트 코드의 모양을 타입스크립트에 설명해주는 파일.(d.ts파일)
+
 ### #5.4: JSDoc
+// @ts-check : 타입스크립트 파일한테 자바스크립트 파일을 확인하라고 알림.
+JSDoc : 코멘트로 이루어진 문법, 함수 위에 코멘트를 적음.
+/** */ 형식으로 자동완성됨.
+
 ### #5.5: Blocks
+가상화폐의 기본적인 기능 몇 개를 구현해 어떻게 작동하는지 알아봄.
+1. npm i -D ts-node
+빌드 없이 타입스크립트를 실행
+2. npm i nodemon
+자동으로 커맨드를 재실행(서버 재실행 필요 x)
+esModuleInterop: CommonJS 모듈을 ES6 모듈 코드베이스로 가져오려고 할 때 발생하는 문제를 해결함
+
 ### #5.6: DefinitelyTyped
+TypeScript type 정의를 위한 레포.
+https://github.com/DefinitelyTyped/DefinitelyTyped
+1. npm i -D 2types/node
+nodejs를 위한 타입들 전부 설치
+
 ### #5.7: Chain
+...code
+
 ### #5.8: Conclusions
