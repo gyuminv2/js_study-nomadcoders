@@ -23,7 +23,25 @@ string을 return하면 되는데 왜 appService를 쓰는지는 구조와 아키
 서비스: 그 function을 놓는 곳
 
 ### #2.0: Movies Controller
+영화의 Rest api를 만듬.
+1. nest g co
+controller 생성
+
+@Controller('movies')
+이 부분이 url의 엔트리 포인트를 컨트롤 함 (localhost:3000/movies)
+
+무언가 필요하면 내가 요청해야함.
+```typescript
+@Get('/:id')
+getOne(@Param('id') id: string) {
+    return `This will return one movie with the id: ${id}`;
+}
+```
+일부분만 업데이트 하려면 Patch, 전체 업데이트는 Put
+
+### #2.1: More Routes
 
 
-### #1.1: Controllers
-### #1.1: Controllers
+### #2.1: More Routes
+### #2.1: More Routes
+### #2.1: More Routes
