@@ -40,8 +40,11 @@ getOne(@Param('id') id: string) {
 일부분만 업데이트 하려면 Patch, 전체 업데이트는 Put
 
 ### #2.1: More Routes
+뭔가를 원한다면 반드시 요청할것.
+body가 필요하면 body를 요청
+
+### #2.2: Movies Service part One
 
 
-### #2.1: More Routes
 ### #2.1: More Routes
 ### #2.1: More Routes
