@@ -16,7 +16,14 @@ Modules
 ### #1.1: Controllers
 NestJS 어플리케이션은 main.ts에서 시작함. 모듈이란 어플리케이션의 일부. 컨트롤러가 하는 일은 url을 가져오고 함수를 실행. 컨트롤러는 express의 라우터 같은 존재. 코드에서는 /hello가 sayHello 함수를 실행.
 
-### #1.1: Controllers
-### #1.1: Controllers
+### #1.2: Services
+string을 return하면 되는데 왜 appService를 쓰는지는 구조와 아키텍처에서 알 수 있음. NestJS는 컨트롤러를 비지니스 로직이랑 구분지어야 함. 서비스는 일반적으로 실제 function을 가지는 부분. AppModule에서는 우리가 하는 모든걸 import함.
+정리
+컨트롤러: url을 가져오고 function을 return함
+서비스: 그 function을 놓는 곳
+
+### #2.0: Movies Controller
+
+
 ### #1.1: Controllers
 ### #1.1: Controllers
