@@ -52,6 +52,18 @@ service 생성
 movie.entities파일은 서비스로 보내고 받을 클래스(인터페이스)를 export함.
 
 ### #2.3: Movies Service part Two
+post 하면 movie가 만들어짐.
+...
 
-
-### #2.1: More Routes
+### #2.5: DTOs and Validation part Two
+### #2.6: Modules and Dependency Injection
+### #2.7: Express on NestJS
+### #3.0: Introduction to Testing in Nest
+### #3.1: Your first Unit Test
+### #3.2: Testing getAll and getOne
+### #3.3: Testing delete and create
+### #3.4: Testing update
+### #4.0: Testing movies
+### #4.1: Testing GET movies id
+### #4.2: Testing PATCH and DELETE movies id
+### #4.3: Finishing Up
