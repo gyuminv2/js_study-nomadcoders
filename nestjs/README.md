@@ -41,10 +41,17 @@ getOne(@Param('id') id: string) {
 
 ### #2.1: More Routes
 뭔가를 원한다면 반드시 요청할것.
-body가 필요하면 body를 요청
+body가 필요하면 body를 요청.
 
 ### #2.2: Movies Service part One
+Single-responsibility prionciple: 하나의 module, class, function이 하나의 기능은 꼭 책임져야하는 원리.
+서비스는 로직을 관리하는 역할.
+1. nest g s
+service 생성
+
+movie.entities파일은 서비스로 보내고 받을 클래스(인터페이스)를 export함.
+
+### #2.3: Movies Service part Two
 
 
-### #2.1: More Routes
 ### #2.1: More Routes
