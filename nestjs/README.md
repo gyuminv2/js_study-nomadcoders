@@ -55,7 +55,17 @@ movie.entities파일은 서비스로 보내고 받을 클래스(인터페이스)
 post 하면 movie가 만들어짐.
 ...
 
+### #2.4: DTOs and Validation part One
+
 ### #2.5: DTOs and Validation part Two
+서비스랑 컨트롤러에서 DTO를 만들어야함.
+DTO: 데이터 전송 객체(data transfer object)
+
+1. npm i class-validator class-transformer
+class의 유효성 검사
+
+transform를 사용하면 타입을 받아서 넘길때 자동으로 타입도 변환함
+
 ### #2.6: Modules and Dependency Injection
 ### #2.7: Express on NestJS
 ### #3.0: Introduction to Testing in Nest
