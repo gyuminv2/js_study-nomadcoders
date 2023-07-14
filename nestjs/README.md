@@ -56,8 +56,6 @@ post 하면 movie가 만들어짐.
 ...
 
 ### #2.4: DTOs and Validation part One
-
-### #2.5: DTOs and Validation part Two
 서비스랑 컨트롤러에서 DTO를 만들어야함.
 DTO: 데이터 전송 객체(data transfer object)
 
@@ -65,6 +63,16 @@ DTO: 데이터 전송 객체(data transfer object)
 class의 유효성 검사
 
 transform를 사용하면 타입을 받아서 넘길때 자동으로 타입도 변환함
+
+### #2.5: DTOs and Validation part Two
+또 다른 DTO 생성 -> CreateMovieDto에 있는 걸 그대로 복붙하는.
+다른점은 필수는 아니라는 점
+NestJS의 기능: 부분 타입
+
+1. npm i @nestjs/mapped-types
+타입을 변환시키고 사용할 수 있게 함.
+
+부분 타입은 베이스 타입이 필요함 -> CreateMovieDto
 
 ### #2.6: Modules and Dependency Injection
 ### #2.7: Express on NestJS
