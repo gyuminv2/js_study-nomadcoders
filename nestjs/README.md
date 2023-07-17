@@ -109,8 +109,12 @@ it('should be 4', () => {
   })
 ```
 
-### #3.2: Testing getAll and getOne
+### #3.2: Testing getAll
+getAll() 함수 테스팅
+
 ### #3.3: Testing delete and create
+
+
 ### #3.4: Testing update
 ### #4.0: Testing movies
 ### #4.1: Testing GET movies id
