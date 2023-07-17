@@ -102,6 +102,13 @@ watch모드로 테스트
 2. e2e(end-to-end)테스트: 모든 시스템 테스팅
 
 ### #3.1: Your first Unit Test
+jest 라이브러리를 사용해 testing.
+```typescript
+it('should be 4', () => {
+    expect(2+2).toEqual(4);
+  })
+```
+
 ### #3.2: Testing getAll and getOne
 ### #3.3: Testing delete and create
 ### #3.4: Testing update
