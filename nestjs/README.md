@@ -85,7 +85,22 @@ app controller 생성
 dependency injection(DI): 의존성 주입: 내부에서 만든 변수를 외부에서 넣음.(nest가 알아서 import)
 
 ### #2.7: Express on NestJS
+nestJS는 express 위에서 돌아감 -> 컨트롤러에서 Request와 Response 객체가 필요하면 사용할 수도 있음: 하지만 req나 res같은 express객체를 직접적으로 사용하는건 좋은 방법이 아님.
+nest는 2개의 프레임워크 위에서 동시에 돌아감.
+1. express
+2. fastify
+fastify는 express보다 2배 빠름.
+
 ### #3.0: Introduction to Testing in Nest
+.spec.ts는 테스트를 포함한 파일
+nestJS에서는 jest가 .spec.ts 파일을 찾을 수 있도록 설정 되어 있음
+1. npm run test:watch
+watch모드로 테스트
+
+2가지의 테스팅 종류
+1. unit testing은 모든 function을 따로 테스트.(서비스에서 분리된 유닛 테스트)
+2. e2e(end-to-end)테스트: 모든 시스템 테스팅
+
 ### #3.1: Your first Unit Test
 ### #3.2: Testing getAll and getOne
 ### #3.3: Testing delete and create
