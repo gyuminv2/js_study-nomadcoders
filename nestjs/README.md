@@ -138,6 +138,7 @@ describe("/movies/:id", () => {
 실제로 사용하는 서버의 id는 number 타입인데, test 서버의 id는 string 타입임 -> 이유는 trasnform을 true로 설정했기 때문: 실제 서버와 테스팅 서버의 환경이 다름 -> main.ts의 설정을 spec.ts로 끌어옴
 
 ### #4.2: Testing PATCH and DELETE movies id
-
+...
 
 ### #4.3: Finishing Up
+...
