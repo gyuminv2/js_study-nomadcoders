@@ -113,7 +113,7 @@ it('should be 4', () => {
 getAll() 함수 테스팅
 
 ### #3.3: Testing delete and create
-
+delete()와 create() testing
 
 ### #3.4: Testing update
 ### #4.0: Testing movies
