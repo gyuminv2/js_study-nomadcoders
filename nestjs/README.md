@@ -116,7 +116,16 @@ getAll() 함수 테스팅
 delete()와 create() testing
 
 ### #3.4: Testing update
+update() testing
+spec.ts 파일들은 유닛 테스트를 위한 파일임. 파일 안에는 beforeEach, afterAll, beforeAll등 많은 hook이 있음.
+
 ### #4.0: Testing movies
+e2e testing을 위해서는 test 폴더가 필요함.
+
+2개의 데이터베이스가 필요함.
+1. 테스팅
+2. 평소 사용
+
 ### #4.1: Testing GET movies id
 ### #4.2: Testing PATCH and DELETE movies id
 ### #4.3: Finishing Up
