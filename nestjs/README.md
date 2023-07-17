@@ -75,7 +75,14 @@ NestJS의 기능: 부분 타입
 부분 타입은 베이스 타입이 필요함 -> CreateMovieDto
 
 ### #2.6: Modules and Dependency Injection
+app.module은 appController랑 appProvider만 가지고 있어야 함.
+따라서 MoviesService랑 MoviesController는 movies.module로 옮겨야 함.
+1. nest g mo
+movies 생성
+2. nest g co
+app controller 생성
 
+dependency injection(DI): 의존성 주입: 내부에서 만든 변수를 외부에서 넣음.(nest가 알아서 import)
 
 ### #2.7: Express on NestJS
 ### #3.0: Introduction to Testing in Nest
